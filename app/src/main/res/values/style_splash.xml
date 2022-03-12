@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="splashScreenTheme" parent="@style/Theme.Module_3_assignment">
+        <item name="android:windowBackground">@drawable/custom_splash_theme</item>
+    </style>
+</resources>

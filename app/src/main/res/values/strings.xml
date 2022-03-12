@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Module_3_assignment</string>
+    <string name="preference_file_name">foodRunner Preference</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+
+    <string name="price_per_person">₹%d /Person</string>
+    <string name="rating">%.1f</string>
+
+</resources>

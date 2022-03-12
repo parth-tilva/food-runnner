@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".ui.login.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:hint="Enter Your name(Min. 3 characters)"
+            android:id="@+id/etName"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/white"
+            android:padding="9dp" />
+
+        <EditText
+            android:hint="Email Address"
+            android:id="@+id/etEmial"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/white"
+            android:padding="9dp" />
+
+        <EditText
+            android:hint="Moblie Number(10 digits)"
+            android:id="@+id/etmoblieNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/white"
+            android:padding="9dp" />
+
+        <EditText
+            android:hint="Delivery Address"
+            android:id="@+id/etAddress"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/white"
+            android:padding="9dp" />
+
+        <EditText
+            android:hint="Choose a password(Min. 4 characters)"
+            android:id="@+id/etPassword"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/white"
+            android:padding="9dp" />
+
+        <EditText
+            android:hint="Confirm Password"
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/white"
+            android:padding="9dp" />
+        <Button
+            android:id="@+id/btnRegister"
+            android:backgroundTint="@color/dark_orange"
+            android:text="Register"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
