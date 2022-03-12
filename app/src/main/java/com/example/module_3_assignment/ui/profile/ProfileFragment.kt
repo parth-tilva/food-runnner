@@ -35,8 +35,7 @@ class ProfileFragment : Fragment() {
 
     }
 
-    fun bind(){
-
+    private fun bind(){
         val name = sharedPreferences.getString("Name","")
         val email = sharedPreferences.getString("Email","")
         val mobile = sharedPreferences.getString("MobileNo","")

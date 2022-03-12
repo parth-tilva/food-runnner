@@ -62,7 +62,3 @@ class FoodAdapter(private val viewModel: FoodViewModel): androidx.recyclerview.w
         }
     }
 }
-
-interface IFavFood{
-    fun onClicked(food: Food)
-}

@@ -40,13 +40,11 @@ class FoodViewModel( appContext: Application): ViewModel() {
 
     private fun insertFood(food : Food) = viewModelScope.launch {
         val foodEntity = FoodEntity(food.id, food.name, food.rating, food.cost_for_one, food.image_url)
-        Log.d("foodViewModel","inserted $foodEntity")
         repository.insertFood(foodEntity)
     }
 
      private fun deleteFood(food: Food) = viewModelScope.launch {
         val foodEntity = FoodEntity(food.id, food.name, food.rating, food.cost_for_one, food.image_url)
-        Log.d("foodViewModel","removed $foodEntity")
         repository.deleteFood(foodEntity)
     }
 

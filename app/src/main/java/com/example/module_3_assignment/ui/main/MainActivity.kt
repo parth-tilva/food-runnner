@@ -15,6 +15,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.*
 import com.example.module_3_assignment.R
+import com.example.module_3_assignment.ui.login.LogInActivity
 import com.example.module_3_assignment.ui.login.RegisterActivity
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -32,7 +33,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         sharedPreferences = getSharedPreferences(getString(R.string.preference_file_name), Context.MODE_PRIVATE)
-        val name = sharedPreferences.getString("MobileNo","noMobileNo??")
         drawerLayout = findViewById(R.id.drawer_layout)
 
         val navHostFragment =
@@ -61,12 +61,11 @@ class MainActivity : AppCompatActivity() {
     fun shutdown(item: MenuItem) {
         if(item.itemId==R.id.log_out){
             Log.d("main","lout out success")
-            //sharedPreferences.edit().clear().apply()
-            val intent = Intent(this@MainActivity,RegisterActivity::class.java)
+            sharedPreferences.edit().putBoolean("IsSignedIN",false).apply()
+            val intent = Intent(this@MainActivity,LogInActivity::class.java)
             startActivity(intent)
         }
     }
-
-
 }
 
+//        val isSignedIn = sharedPreferences.getBoolean("IsSignedIN",false)
