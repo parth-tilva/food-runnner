@@ -8,7 +8,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -31,6 +34,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
 
         sharedPreferences = getSharedPreferences(getString(R.string.preference_file_name), Context.MODE_PRIVATE)
         drawerLayout = findViewById(R.id.drawer_layout)
@@ -57,13 +63,29 @@ class MainActivity : AppCompatActivity() {
 
         return item.onNavDestinationSelected(navController) || super.onOptionsItemSelected(item)
     }
-
-    fun shutdown(item: MenuItem) {
-        if(item.itemId==R.id.log_out){
+    private fun logOut(){
             Log.d("main","lout out success")
-            sharedPreferences.edit().putBoolean("IsSignedIN",false).apply()
+            sharedPreferences.edit().putBoolean("IsLoggedIN",false).commit()
             val intent = Intent(this@MainActivity,LogInActivity::class.java)
             startActivity(intent)
+            finish()
+    }
+
+    fun shutdown(item: MenuItem) {
+
+        if(item.itemId==R.id.log_out) {
+
+            val dialog = AlertDialog.Builder(this)
+            dialog.setTitle("Confirmation")
+            dialog.setMessage("Are you sure you want to Lot out?")
+            dialog.setPositiveButton("OK") { _, _ ->
+                logOut()
+            }
+            dialog.setNegativeButton("Cancel") { _, _ ->
+                //do nothing
+            }
+            dialog.create()
+            dialog.show()
         }
     }
 }

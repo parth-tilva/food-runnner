@@ -18,8 +18,8 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:layout_margin="5dp"
-            tools:text="a;lsjkdf asdlfjas dflka;s dfalsdkjf asldkfj as"
-            android:textColor="@color/black" />
+            tools:text="Q.1 dflka;s dfalsdkjf asldkfj as"
+            android:textColor="@color/dark_orange" />
 
         <TextView
             android:id="@+id/txt_Que"
@@ -29,5 +29,12 @@
             tools:text="a;lsjkdf asdlfjas dflka;s dfalsdkjf asldkfj as"
             android:textSize="18sp" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="#737272" />
     </LinearLayout>
 </layout>

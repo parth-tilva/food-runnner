@@ -19,7 +19,7 @@ interface FoodDao {
     @Update
     suspend fun updateFoodItem(food: FoodEntity)
 
-    @Query("SELECT * FROM food")
+    @Query("SELECT * FROM food order by name asc " )
     fun getAllFoodItem(): Flow<List<FoodEntity>>
 
     @Query("SELECT * FROM food  WHERE id = :id")

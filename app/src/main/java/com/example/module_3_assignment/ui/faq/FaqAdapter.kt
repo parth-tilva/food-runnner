@@ -9,13 +9,11 @@ import com.example.module_3_assignment.model.Faq
 class FaqAdapter(val listOfQ:List<Faq>): RecyclerView.Adapter<FaqAdapter.ViewHolder>() {
 
     class ViewHolder(val binding: QesAnsItemBinding): RecyclerView.ViewHolder(binding.root){
-        fun bind(faq: Faq){
-            binding.txtTitle.text = "Q: ${faq.title}"
+        fun bind(faq: Faq,position: Int){
+            binding.txtTitle.text = "Q.${position+1} ${faq.title}"
             binding.txtQue.text = faq.content
         }
     }
-
-
 
 
 
@@ -25,7 +23,7 @@ class FaqAdapter(val listOfQ:List<Faq>): RecyclerView.Adapter<FaqAdapter.ViewHol
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = listOfQ[position]
-        holder.bind(item)
+        holder.bind(item,position)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

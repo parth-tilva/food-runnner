@@ -7,19 +7,32 @@
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/drawable/custom_splash_theme.xml" value="0.2814814814814815" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/drawable/is_fav_draw.xml" value="0.16614583333333333" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/drawable/item_qa.xml" value="0.2740740740740741" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/drawable/serach_bar_background.xml" value="0.290625" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/activity_after_forgot_p.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/activity_after_register.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/activity_forgot_password.xml" value="0.37712519319938176" />
-        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/activity_log_in.xml" value="0.5121477162293488" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/activity_log_in.xml" value="0.4" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/activity_reset_password.xml" value="0.2713541666666667" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/cart_item.xml" value="0.264" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/fragment_comformation_.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/fragment_conformation.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/fragment_faq.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/fragment_favourite.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/fragment_home.xml" value="0.4" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/fragment_menu.xml" value="0.4" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/fragment_my_cart.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/fragment_order_histroy.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/fragment_order_histroy_.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/fragment_otp_recive.xml" value="0.264" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/fragment_profile.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/header_layout.xml" value="0.2" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/history_item.xml" value="0.2786458333333333" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/item_food.xml" value="0.39906103286384975" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/menu_item.xml" value="0.4" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/layout/qes_ans_item.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/menu/filter_icon.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/menu/header.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/menu/menu_item.xml" value="0.4" />
         <entry key="..\:/Users/parth/OneDrive/Desktop/project_history/Module_3_assignment/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.24166666666666667" />

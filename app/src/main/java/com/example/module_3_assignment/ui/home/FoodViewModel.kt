@@ -20,6 +20,20 @@ class FoodViewModel( appContext: Application): ViewModel() {
     var foods: LiveData<List<Food>> = _foods
 
 
+    fun setFoods(list: List<Food>){
+        _foods.value = list
+    }
+
+    private fun updateLike(food: Food){
+        val list = _foods.value
+        if(list != null && list.isNotEmpty()){
+            val pos = list.indexOf(food)
+            val apply = !list[pos].isFav
+            list[pos].apply { isFav=apply }
+            _foods.value = list
+        }
+    }
+
     init {
         val foodDao = FoodDataBase.getDatabase(appContext).foodDao()
          repository = FoodRepo(foodDao)
@@ -34,35 +48,36 @@ class FoodViewModel( appContext: Application): ViewModel() {
         }
     }
 
-    fun resetFoodEntity(){
-        _foods.value = listOf()
-    }
 
-    private fun insertFood(food : Food) = viewModelScope.launch {
-        val foodEntity = FoodEntity(food.id, food.name, food.rating, food.cost_for_one, food.image_url)
+    private fun insertFood(foodEntity: FoodEntity ) = viewModelScope.launch {
         repository.insertFood(foodEntity)
     }
 
-     private fun deleteFood(food: Food) = viewModelScope.launch {
-        val foodEntity = FoodEntity(food.id, food.name, food.rating, food.cost_for_one, food.image_url)
+     private fun deleteFood(foodEntity: FoodEntity) = viewModelScope.launch {
         repository.deleteFood(foodEntity)
     }
 
-     fun deleteFoodEntity(foodEntity: FoodEntity) = viewModelScope.launch {
-        repository.deleteFood(foodEntity)
-    }
 
     suspend fun getFoodById(id:Int) = repository.getFoodById(id)
 
 
     fun onFavClicked(food: Food){
+        val entity = FoodEntity(food.id,food.name,food.rating,food.cost_for_one,food.image_url)
         if(food.isFav){
-            deleteFood(food)
+            deleteFood(entity)
+            updateLike(food)
+
         }else{
-            insertFood(food)
+            insertFood(entity)
+            updateLike(food)
         }
     }
 }
+
+
+
+
+// when parameter is there we use factory
 class FoodViewModelFactory(private val app: Application) : ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(FoodViewModel::class.java)) {

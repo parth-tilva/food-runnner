@@ -1,9 +1,8 @@
 <resources>
-    <string name="app_name">Module_3_assignment</string>
+    <string name="app_name">Food Runner</string>
     <string name="preference_file_name">foodRunner Preference</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
 
 
     <string name="drawer_open">open</string>

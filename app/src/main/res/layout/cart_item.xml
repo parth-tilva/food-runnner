@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="7"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/txt_food_name"
+            android:text="Kachaa Aloo Tadka"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_weight="5.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/ic_baseline_remove_24"
+            android:drawablePadding="5dp" />
+
+        <TextView
+            android:id="@+id/txt_food_price"
+            android:text="Rs.160"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawablePadding="5dp" />
+    </LinearLayout>
+</layout>

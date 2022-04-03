@@ -46,7 +46,7 @@ class ProfileFragment : Fragment() {
             binding.txtMoblie.text = "Moblie:\t\t\t +91 $mobile"
             binding.txtEmail.text = "Email:\t\t $email"
             binding.txtGender.text = "Address:\t\t $address"
-            binding.txtDateOFBirth.text = "Password:\t\t $password"
+            binding.txtDateOFBirth.text = "Uid:\t\t $password"
     }
 
 

@@ -7,23 +7,29 @@
         android:id="@+id/homeFragment"
         android:title="Home"
         />
-    <item
-        android:icon="@drawable/ic_baseline_person_24"
-        android:id="@+id/profileFragment"
-        android:title="My Profile" />
+
     <item
         android:icon="@drawable/ic_baseline_favorite_border_24"
         android:id="@+id/favouriteFragment"
         android:title="Favorite Restaurants" />
     <item
+        android:icon="@drawable/ic_baseline_history_24"
+        android:id="@+id/orderHistoryFragment"
+        android:title="Order History" />
+    <item
         android:icon="@drawable/ic_baseline_question_answer_24"
         android:id="@+id/faqFragment"
         android:title="FAQs" />
+    <item
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/profileFragment"
+        android:title="My Profile" />
 
     <item
             android:icon="@drawable/ic_baseline_login_24"
             android:id="@+id/log_out"
             android:onClick="shutdown"
             android:title="Log out" />
+
 
 </menu>
