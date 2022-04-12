@@ -15,7 +15,7 @@ Android, Kotlin
 [Navigation](https://developer.android.com/guide/navigation/)
 
 #### External libraries 
-[Volley](https://google.github.io/volley/) library for network call,
+[Volley](https://google.github.io/volley/) library for network call,<br>
 [Picasso](https://square.github.io/picasso/) library for image processing 
 
 
@@ -40,19 +40,41 @@ Android, Kotlin
 
 ## Screenshots
 
-### Home | History | Details/edit | Alert Dialog 
+### Login | Register | Details/edit | Forget Password
 
 <p align = "left" >
-  <img width="250" height="500" src="git_images/home.jpg" > <img >  <img > <img >
-  <img width="250" height="500"  src="git_images/history.jpg">  <img > <img > <img >
-  <img width="250" height="500" src="git_images/details.jpg" >  <img > <img > <img >
-  <ima width="250" height="500" src = "git_images/alert.jpg" > <img > <img > <img >
+  <img width="250" height="500" src="git_images/log_in.jpg" > <img >  <img > <img >
+  <img width="250" height="500"  src="git_images/register.jpg">  <img > <img > <img >
+  <img width="250" height="500" src="git_images/otp_receive.jpg" >  <img > <img > <img >
 </p>
 
-### Settings | Chat | Profile
+### Navigation Drawer | All Restaurants | Menu 
 
 <p align = "left" >
-  <img width="250" height="500" src="github_images/settings.png">
-  <img width="250" height="500"  src="github_images/chat.png"> 
-  <img width="250" height="500" src="github_images/profile.png"> 
+  <img width="250" height="500" src="git_images/navigation_drawer.jpg" > <img >  <img > <img >
+  <img width="250" height="500"  src="git_images/all_restaurant.jpg">  <img > <img > <img >
+  <img width="250" height="500" src="git_images/menu.jpg" >  <img > <img > <img >
+</p>
+
+### Sort | Favorites Restaurant | Order History 
+
+<p align = "left" >
+  <img width="250" height="500" src="git_images/sort.jpg" > <img >  <img > <img >
+  <img width="250" height="500"  src="git_images/favorite.jpg">  <img > <img > <img >
+  <img width="250" height="500" src="git_images/order_history.jpg" >  <img > <img > <img >
+</p>
+### Sort | Favorites Restaurant | Order History 
+
+<p align = "left" >
+  <img width="250" height="500" src="git_images/sort.jpg" > <img >  <img > <img >
+  <img width="250" height="500"  src="git_images/favorite.jpg">  <img > <img > <img >
+  <img width="250" height="500" src="git_images/order_history.jpg" >  <img > <img > <img >
+</p>
+
+### profile | My Cart | FAQ 
+
+<p align = "left" >
+  <img width="250" height="500" src="git_images/profile.jpg" > <img >  <img > <img >
+  <img width="250" height="500"  src="git_images/my_cart.jpg">  <img > <img > <img >
+  <img width="250" height="500" src="git_images/faq.jpg" >  <img > <img > <img >
 </p>
