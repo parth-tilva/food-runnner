@@ -1,24 +1,19 @@
 package com.example.module_3_assignment.ui.menuOfCanteen
 
-import android.app.Fragment
-import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
-import com.example.module_3_assignment.R
 import com.example.module_3_assignment.databinding.FragmentMenuBinding
-import com.example.module_3_assignment.model.Food
 import com.example.module_3_assignment.model.MenuItem
-import java.lang.reflect.Method
 
 class MenuFragment : Fragment(), IMenu {
 
