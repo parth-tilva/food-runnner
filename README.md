@@ -40,7 +40,7 @@ Android, Kotlin
 
 ## Screenshots
 
-### Login | Register | Details/edit | Forget Password
+### Login | Register | Forget Password
 
 <p align = "left" >
   <img width="250" height="500" src="git_images/log_in.jpg" > <img >  <img > <img >
@@ -57,22 +57,20 @@ Android, Kotlin
 </p>
 
 ### Sort | Favorites Restaurant | Order History 
-
 <p align = "left" >
   <img width="250" height="500" src="git_images/sort.jpg" > <img >  <img > <img >
   <img width="250" height="500"  src="git_images/favorite.jpg">  <img > <img > <img >
   <img width="250" height="500" src="git_images/order_history.jpg" >  <img > <img > <img >
 </p>
+
 ### Sort | Favorites Restaurant | Order History 
-
 <p align = "left" >
   <img width="250" height="500" src="git_images/sort.jpg" > <img >  <img > <img >
   <img width="250" height="500"  src="git_images/favorite.jpg">  <img > <img > <img >
   <img width="250" height="500" src="git_images/order_history.jpg" >  <img > <img > <img >
 </p>
 
-### profile | My Cart | FAQ 
-
+### Profile | My Cart | FAQ 
 <p align = "left" >
   <img width="250" height="500" src="git_images/profile.jpg" > <img >  <img > <img >
   <img width="250" height="500"  src="git_images/my_cart.jpg">  <img > <img > <img >
