@@ -76,7 +76,7 @@ class FoodViewModel( appContext: Application): ViewModel() {
 
 
 
-// when parameter is there we use factory
+// When parameter is there we use factory
 class FoodViewModelFactory(private val app: Application) : ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(FoodViewModel::class.java)) {
