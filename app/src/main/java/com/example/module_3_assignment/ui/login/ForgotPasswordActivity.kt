@@ -21,6 +21,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
+import java.lang.reflect.Method
 
 class ForgotPasswordActivity : AppCompatActivity() {
     lateinit var etMoblie :EditText
@@ -32,14 +33,6 @@ class ForgotPasswordActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
 
-//        sharedPreferences = getSharedPreferences(getString(R.string.preference_file_name), Context.MODE_PRIVATE)
-//        val isLoggedIn = sharedPreferences.getBoolean("IsLoggedIN",false)
-//
-//        if(!isLoggedIn){
-//            Toast.makeText(this,"Register first not register user!!", Toast.LENGTH_LONG).show()
-//            val intent = Intent(this@ForgotPasswordActivity, RegisterActivity::class.java)
-//            startActivity(intent)
-//        }
 
         etMoblie = findViewById(R.id.etmoblieNo)
         etEmail = findViewById(R.id.etEmial)

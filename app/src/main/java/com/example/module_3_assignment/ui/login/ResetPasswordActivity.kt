@@ -20,6 +20,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
+import java.lang.reflect.Method
 
 class ResetPasswordActivity : AppCompatActivity() {
     val TAG = "reset"
@@ -39,8 +40,6 @@ class ResetPasswordActivity : AppCompatActivity() {
 
     fun setupUi(){
         val nextBtn = binding.btnSubmit
-
-
         nextBtn.setOnClickListener {
             val otp = binding.etOtp.text.toString()
             val newPass = binding.etPassword.text.toString()
@@ -53,7 +52,7 @@ class ResetPasswordActivity : AppCompatActivity() {
         }
     }
 
-    private fun volleyrespond(status:Boolean){
+    private fun volleyRespond(status:Boolean){
                 if(status){
                     val intent = Intent(this@ResetPasswordActivity,MainActivity::class.java)
                     startActivity(intent)
@@ -90,7 +89,7 @@ class ResetPasswordActivity : AppCompatActivity() {
                             val errorMessage = jsonObject.getString("errorMessage")
                             Toast.makeText(this,"apiE: $errorMessage", Toast.LENGTH_LONG).show()
                         }
-                        volleyrespond(success)
+                        volleyRespond(success)
                     }catch (e:Exception){
                         Toast.makeText(this,"error catch e:$e", Toast.LENGTH_LONG).show()
                     }

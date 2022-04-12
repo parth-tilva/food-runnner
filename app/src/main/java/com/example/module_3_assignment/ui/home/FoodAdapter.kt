@@ -51,7 +51,6 @@ class FoodAdapter(private val viewModel: FoodViewModel,private val listnere: IHo
         }
         holder.itemView.setOnClickListener {
             listnere.onItemClicked(food)
-
         }
         holder.bind(food,viewModel)
     }

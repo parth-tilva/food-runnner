@@ -41,8 +41,7 @@ class LogInActivity : AppCompatActivity() {
             Toast.makeText(this,"Enter mobile and password",Toast.LENGTH_LONG).show()
         }else if(!isLoggedIn && !isSignedIn){
             Toast.makeText(this,"Register first",Toast.LENGTH_LONG).show()
-//            val intent = Intent(this@LogInActivity, RegisterActivity::class.java)
-//            startActivity(intent)
+
         }else if(!isSignedIn && isLoggedIn){
             Toast.makeText(this,"error is sharedpreferences saves",Toast.LENGTH_LONG).show()
         }else{

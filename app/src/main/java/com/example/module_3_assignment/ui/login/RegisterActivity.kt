@@ -24,6 +24,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
+import java.lang.reflect.Method
 
 class RegisterActivity : AppCompatActivity() {
     lateinit var etName: EditText
@@ -82,7 +83,7 @@ class RegisterActivity : AppCompatActivity() {
             etMoblie.error = "This field is required"
             return false
         }
-        if (etMoblie.length() < 10) {
+        if (etMoblie.length() != 10) {
             etMoblie.setError("Mobile number must be 10 digits")
             return false
         }

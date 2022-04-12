@@ -66,7 +66,6 @@ class FoodViewModel( appContext: Application): ViewModel() {
         if(food.isFav){
             deleteFood(entity)
             updateLike(food)
-
         }else{
             insertFood(entity)
             updateLike(food)

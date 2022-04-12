@@ -1,5 +1,6 @@
 package com.example.module_3_assignment.ui.menuOfCanteen
 
+import android.app.Fragment
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -17,6 +18,7 @@ import com.example.module_3_assignment.R
 import com.example.module_3_assignment.databinding.FragmentMenuBinding
 import com.example.module_3_assignment.model.Food
 import com.example.module_3_assignment.model.MenuItem
+import java.lang.reflect.Method
 
 class MenuFragment : Fragment(), IMenu {
 
@@ -77,7 +79,7 @@ class MenuFragment : Fragment(), IMenu {
 
 
 
-    fun getData(){
+    private fun getData(){
         val queue = Volley.newRequestQueue(requireContext())
         val url = "http://13.235.250.119/v2/restaurants/fetch_result/$resId"
 

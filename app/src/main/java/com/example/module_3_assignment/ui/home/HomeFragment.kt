@@ -1,6 +1,7 @@
 package com.example.module_3_assignment.ui.home
 
 import android.app.AlertDialog
+import android.app.Fragment
 import android.content.DialogInterface
 import android.os.Bundle
 import android.util.Log
@@ -22,10 +23,10 @@ import com.example.module_3_assignment.ui.menuOfCanteen.MenuViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.json.JSONException
+import java.lang.reflect.Method
 import java.util.*
 
 
-val TAG = "home"
 class HomeFragment : Fragment(), IHome {
 
     lateinit var binding: FragmentHomeBinding
@@ -36,7 +37,7 @@ class HomeFragment : Fragment(), IHome {
     }
     private val menuViewModel: MenuViewModel by activityViewModels()
 
-    var checkedItem = 0 // check sort comparator
+    var checkedItem = -1 // check sort comparator
     lateinit var recyclerView: RecyclerView
     lateinit var adapter: FoodAdapter
     private val costLtoH = Comparator<Food> { food1, food2 ->

@@ -12,7 +12,6 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.example.module_3_assignment.R
 import com.example.module_3_assignment.databinding.FragmentOrderHistroyBinding
-import com.example.module_3_assignment.model.Food
 import com.example.module_3_assignment.model.History
 import com.example.module_3_assignment.model.MenuItem
 
@@ -53,7 +52,7 @@ class OrderHistoryFragment : Fragment() {
         val queue = Volley.newRequestQueue(requireContext())
         val url = "http://13.235.250.119/v2/orders/fetch_result/$uid"
 
-        val jsonrequest = object: JsonObjectRequest(
+        val jsonRequest = object: JsonObjectRequest(
             Method.GET,
             url,
             null,
@@ -102,6 +101,6 @@ class OrderHistoryFragment : Fragment() {
                 return headers
             }
         }
-        queue.add(jsonrequest)
+        queue.add(jsonRequest)
     }
 }
