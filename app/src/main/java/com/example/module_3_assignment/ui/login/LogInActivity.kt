@@ -17,6 +17,7 @@ import com.example.module_3_assignment.model.User
 import com.example.module_3_assignment.ui.main.MainActivity
 import org.json.JSONObject
 
+const val TAG = "LogIn"
 class LogInActivity : AppCompatActivity() {
     lateinit var etMoblie: EditText
     lateinit var etPassword: EditText
@@ -25,6 +26,7 @@ class LogInActivity : AppCompatActivity() {
     lateinit var btnLogIn: Button
     lateinit var sharedPreferences: SharedPreferences
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d(TAG,"onCreate called ")
         setTheme(R.style.Theme_Module_3_assignment)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in)
@@ -174,5 +176,22 @@ class LogInActivity : AppCompatActivity() {
         val intent = Intent(this@LogInActivity, MainActivity::class.java)
         startActivity(intent)
         finish()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG,"onStop called ")
+
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG,"onPause called ")
+
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG,"onDestory called ")
     }
 }

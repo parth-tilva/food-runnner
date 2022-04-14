@@ -1,4 +1,4 @@
-package com.example.module_3_assignment .ui.main
+package com.example.module_3_assignment.ui.main
 
 import android.content.Context
 import android.content.Intent
@@ -8,10 +8,8 @@ import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -19,10 +17,10 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.*
 import com.example.module_3_assignment.R
 import com.example.module_3_assignment.ui.login.LogInActivity
-import com.example.module_3_assignment.ui.login.RegisterActivity
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
+const val TAG = "main"
 class MainActivity : AppCompatActivity() {
     lateinit var sharedPreferences: SharedPreferences
     lateinit var textView: TextView
@@ -32,10 +30,10 @@ class MainActivity : AppCompatActivity() {
     lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d(TAG,"onCreate called ")
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
 
 
         sharedPreferences = getSharedPreferences(getString(R.string.preference_file_name), Context.MODE_PRIVATE)
@@ -87,6 +85,23 @@ class MainActivity : AppCompatActivity() {
             dialog.create()
             dialog.show()
         }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG,"onStop called ")
+
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG,"onPause called ")
+
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG,"onDestory called ")
     }
 }
 

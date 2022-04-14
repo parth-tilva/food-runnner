@@ -1,6 +1,5 @@
 package com.example.module_3_assignment.ui.login
 
-import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
@@ -13,15 +12,12 @@ import androidx.lifecycle.lifecycleScope
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.example.module_3_assignment.R
-import com.example.module_3_assignment.model.User
-import com.example.module_3_assignment.ui.home.HomeFragment
-import com.example.module_3_assignment.ui.main.MainActivity
+
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
-import java.lang.reflect.Method
 
 class ForgotPasswordActivity : AppCompatActivity() {
     lateinit var etMoblie :EditText
