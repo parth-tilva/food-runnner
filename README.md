@@ -1,8 +1,8 @@
 # Food Ordering App Android
-![HeaderImage](github_images/header.png)
+![HeaderImage](git_images/crop_header.png)
 
 ## Introduction
-This App is created with goal to practice and lean android development. This is app is made as per the Internshala problem statement. APIs are provided by Internshala.
+This App is created with goal to practice and learn android development. This is app is made as per the Internshala problem statement. APIs are provided by Internshala.
 See below for more information.
 
 ## Technologies & Architecture 
