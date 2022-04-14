@@ -2,7 +2,7 @@
 ![HeaderImage](git_images/crop_header.png)
 
 ## Introduction
-This App is created with goal to practice and learn android development. This is app is made as per the Internshala problem statement. APIs are provided by Internshala.
+This App is created with goal to practice and learn android development. This is app is made as per the Internshala <a href="https://github.com/parth-tilva/food-runnner/blob/master/Android%20Training%20Project%20Problem%20Statement.pdf">problem statement</a>. APIs are provided by Internshala.
 See below for more information.
 
 ## Technologies & Architecture 
