@@ -56,12 +56,6 @@ Android, Kotlin
   <img width="250" height="500" src="git_images/menu.jpg" >  <img > <img > <img >
 </p>
 
-### Sort | Favorites Restaurant | Order History 
-<p align = "left" >
-  <img width="250" height="500" src="git_images/sort.jpg" > <img >  <img > <img >
-  <img width="250" height="500"  src="git_images/favorite.jpg">  <img > <img > <img >
-  <img width="250" height="500" src="git_images/order_history.jpg" >  <img > <img > <img >
-</p>
 
 ### Sort | Favorites Restaurant | Order History 
 <p align = "left" >
